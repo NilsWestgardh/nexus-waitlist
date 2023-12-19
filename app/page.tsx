@@ -1,5 +1,6 @@
 import { Container, Box, Typography, Button, SvgIcon } from "@mui/material";
 import Image from 'next/image';
+import DiscordButton from "./components/DiscordButton";
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
             src="/images/nexus-hero-2.png"
             alt="Nexus hero image"
             fill={true}
-            objectFit="cover"
             style={{
               zIndex: -1,
+              objectFit: 'cover',
             }}
         />
         <Typography variant="subtitle1" color="primary.contrastText" sx={{ mb: 3 }}>
@@ -35,13 +36,7 @@ export default function Home() {
         <Typography variant="h5" color="primary.contrastText" sx={{ my: 3 }}>
             Join our waitlist and stay updated
         </Typography>
-        <Button
-            variant="outlined"
-            size="large"
-            color="primary"
-        >
-            Send
-        </Button>
+        <DiscordButton />
     </Box>
 
         {/* MAIN CONTENT */}
@@ -52,7 +47,7 @@ export default function Home() {
               <Box className="flex flex-col justify-center p-12 my-24 mx-12 space-y-6 rounded-xl bg-gray-800 border border-gray-700 shadow-2xl shadow-black">
               
               <Typography variant="h3" component="h3" color="primary.contrastText">USP</Typography>
-              <Typography variant="subtitle1" component="" color="primary.contrastText">USP</Typography>
+              <Typography variant="subtitle1" color="primary.contrastText">USP</Typography>
             </Box>
         </Box>
             
