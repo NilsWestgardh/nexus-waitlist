@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Container, Box } from "@mui/material";
 import Section from "./components/Section";
 import Hero from './components/Hero';
+import FullWidthImage from './components/FullWidthImage';
+import DiscordButton from './components/DiscordButton';
 
 export default function Home() {
 
@@ -12,15 +14,18 @@ export default function Home() {
       {/* HERO */}
       <Hero />
 
+      
+
       {/* MAIN CONTENT */}
       <Container>
+
         {/* USP */}
         <Section props={{
           reverse: false,
           section: "USP",
           headline: "Headline goes here",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-          image: "void_woods.jpg",
+          image: "nexus_cards.png",
         }} />
 
         {/* VISION */}
@@ -32,6 +37,7 @@ export default function Home() {
           image: "void_woods.jpg",
         }} />
 
+        {/* STORY */}
         <Section props={{
           reverse: false,
           section: "STORY",
@@ -40,6 +46,13 @@ export default function Home() {
           image: "void_woods.jpg",
         }} />
 
+      </Container>
+
+      <FullWidthImage url="void_woods.jpg" alt="Void Woods" />
+
+      <Container>
+
+        {/* GAMEPLAY */}
         <Section props={{
           reverse: true,
           section: "GAMEPLAY",
@@ -58,13 +71,19 @@ export default function Home() {
         }} />
 
         {/* PLAYTEST */}
-        <Section props={{
+      <Section props={{
           reverse: true,
           section: "PLAYTEST",
           headline: "Headline goes here",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
           image: "void_woods.jpg",
         }} />
+
+      </Container>
+
+      <FullWidthImage url="void_woods.jpg" alt="Void Woods" />
+
+      <Container>
 
         {/* ROADMAP */}
         <Section props={{
@@ -85,7 +104,18 @@ export default function Home() {
         }} />
 
         {/* CTA */}
+        <Box className="flex flex-col justify-center items-center my-12 text-white bg-lime-800" sx={{ width: "100%", height: "400px" }}>
+          CTA GOES HERE
+          <DiscordButton />
+        </Box>
+
+
       </Container>
+
+      <Box className="flex flex-col justify-center items-center text-white" sx={{ width: "100%", height: "200px" }}>
+        Copyright Nexus 2023
+      </Box>
+
     </Box>
   )
 }
