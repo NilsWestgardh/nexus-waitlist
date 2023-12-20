@@ -8,7 +8,7 @@ import Hero from './components/Hero';
 export default function Home() {
 
   return (
-    <Box className="flex flex-col space-y-12 md:space-y-24 px-6 md:px-0 ">
+    <Box className="flex flex-col space-y-12 md:space-y-24">
       {/* HERO */}
       <Hero />
 

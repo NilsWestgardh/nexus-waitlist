@@ -21,19 +21,21 @@ export default function Section({ props }: SectionProps) {
             `${props.reverse ? "flex flex-col md:flex-row-reverse" : " flex flex-col md:flex-row"}`
         )}>
             <Box className="flex flex-col w-full space-y-0 md:space-y-6">
-              <LoadingBar section={props.section} progressMessage="LOADING" completeMessage={props.section} />
+            <Typography
+                variant="overline"
+                color="secondary"
+              >
+                {props.section}
+              </Typography>
               <Typography
-                variant="h3"
-                component="h3"
+                variant="h2"
                 color="primary"
-                className=""
               >
                 {props.headline}
               </Typography>
               <Typography
-                variant="subtitle1"
-                color="primary.contrastText"
-                className="font-light text-slate-400"
+                variant="body1"
+                className="text-slate-400"
               >
                 {props.body}
               </Typography>

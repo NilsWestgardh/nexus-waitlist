@@ -37,29 +37,32 @@ const theme = createTheme({
   typography: {
     fontWeightLight: 300,
     h1: {
-      fontSize: '3rem',
-      fontWeight: 600,
+      fontSize: '6rem',
+      fontWeight: 400,
     },
     h2: {
-      fontSize: '2.5rem',
-      fontWeight: 500,
+      fontSize: '3rem',
+      fontWeight: 400,
     },
     h3: {
-      fontSize: '2rem',
+      fontSize: '1.5rem',
       fontWeight: 400,
     },
     h4: {
-      fontSize: '1.5rem',
+      fontSize: '1.25rem',
       fontWeight: 300,
     },
     subtitle1: {
-      fontWeight: 400,
+      fontSize: '1.25rem',
+      fontWeight: 300,
     },
     subtitle2: {
-      fontWeight: 500,
+      fontSize: '1.25rem',
+      fontWeight: 300,
     },
     body1: {
-      fontWeight: 400,
+      fontSize: '1.25rem',
+      fontWeight: 300,
     },
     body2: {
       fontWeight: 400,
@@ -71,6 +74,7 @@ const theme = createTheme({
       fontWeight: 400,
     },
     overline: {
+      fontSize: '1.25rem',
       fontWeight: 400,
     },
   },

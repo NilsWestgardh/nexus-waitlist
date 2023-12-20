@@ -6,6 +6,7 @@ import Image from "next/image";
 import DiscordButton from "./DiscordButton";
 import LoadingBar from "./LoadingBar";
 import NexusLogo from "./NexusLogo";
+import clsx from "clsx";
 
 export default function Hero() {
   const [loadingBarState, setLoadingBarState] = useState('fade-in'); // 'fade-in', 'fade-out', or ''
@@ -45,7 +46,7 @@ export default function Hero() {
       }}
     >
       {/* The background image is always rendered without any condition */}
-      <Image
+      {fadeInContent && (<Image
         src="/images/nexus-hero-4.png"
         alt="Nexus hero image"
         fill={true}
@@ -56,7 +57,7 @@ export default function Hero() {
             objectFit: 'cover',
             opacity: 0.33,
         }}
-        />
+        />)}
 
       {/* Loading bar is controlled for fading in and out */}
       {loadingBarState && (
