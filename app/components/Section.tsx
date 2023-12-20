@@ -25,7 +25,7 @@ export default function Section({ props }: SectionProps) {
               <Typography
                 variant="h3"
                 component="h3"
-                color="primary.contrastText"
+                color="primary"
                 className=""
               >
                 {props.headline}

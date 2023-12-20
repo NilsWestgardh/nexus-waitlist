@@ -34,7 +34,7 @@ export default function LoadingBar({ section, progressMessage, completeMessage }
     const unloadedBar = '░'.repeat(unloadedCharacters);
 
     return (
-        <div className="flex items-center w-full h-6 font-mono text-sm initial-hidden">
+        <div className="flex items-center w-full h-6 font-mono text-sm">
             {!hideBar ? (
                 <>
                     <span className="text-lime-500">{progressMessage} {section} [</span>

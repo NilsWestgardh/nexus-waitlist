@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Container, Box, Typography, Button, SvgIcon } from "@mui/material";
+import { Container, Box } from "@mui/material";
 import Section from "./components/Section";
 import Hero from './components/Hero';
 
