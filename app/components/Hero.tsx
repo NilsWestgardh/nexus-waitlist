@@ -72,7 +72,7 @@ export default function Hero() {
           <NexusLogo />
           <Box className="flex flex-col justify-center items-center space-y-0 mb-6">
             <Typography variant="h1" className="gradient-animation">AI-POWERED.</Typography>
-            <Typography variant="h1" className="gradient-animation">OPEN SOURCE.</Typography>
+            <Typography variant="h1" className="gradient-animation">COMMUNITY-DRIVEN.</Typography>
             <Typography variant="h1" className="gradient-animation">COMPETITIVE TCG.</Typography>
           </Box>
           <Typography

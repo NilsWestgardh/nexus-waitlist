@@ -17,102 +17,159 @@ export default function Home() {
       {/* MAIN CONTENT */}
       <Container>
 
-        {/* USP */}
+        {/* CARD CREATION */}
         <Section props={{
           reverse: false,
-          section: "AI-POWERED CARD CREATION",
-          headline: "Imagine it. Create it. Play it.",
-          body: "Both by the Nexus team and by the community create cards. The AI-powered card creator tool makes it easy go from idea to awesome custom card. The community submits and votes on cards, and the top voted cards are added to the game.",
-          image: "nexus_cards.png",
+          section: "CARDS",
+          headline: "Imagine it, then play it.",
+          body: "Nexus's AI-powered Card Creator tool makes it easy go from idea to your own custom card. Beat your friends with it in a casual match right away, or submit it for review to be included in the official game.",
+          image: "nexus_encounter.jpg",
+          alt: "",
+          showCta: false,
+          cta: "",
+          link: "",
         }} />
-        
+
         {/* COMMUNITY */}
         <Section props={{
-          reverse: false,
-          section: "COMMUNITY-DRIVEN DEVELOPMENT",
+          reverse: true,
+          section: "COMMUNITY",
           headline: "Get involved. Get heard.",
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-          image: "nexus_friends.jpg",
+          body: "Nexus will be co-developed with the community. Contribute with feedback, playtesting, story ideas, cards, and votes for submitted custom cards. Join the Discord to get started.",
+          image: "nexus_team.jpg",
+          alt: "",
+          showCta: true,
+          cta: "Join the Nexus Discord",
+          link: "https://discord.gg/wVtZJuxfQN",
         }} />
 
       </Container>
 
-      <FullWidthImage url="nexus_flower.jpg" alt="Void Woods" />
+      <FullWidthImage url="nexus_seer.jpg" alt="Nexus elf seer" />
+
+      <Container>
+
+        {/* REWARDS */}
+        <Section props={{
+          reverse: true,
+          section: "REWARDS",
+          headline: "Make plays, and money.",
+          body: "The community votes on submitted cards. Top cards make it into the game, and earn their creator a share of generated revenue. Join the Discord to start making cards when the card creator launches.",
+          image: "nexus_mine.jpg",
+          alt: "",
+          showCta: true,
+          cta: "Join the Nexus Discord",
+          link: "https://discord.gg/wVtZJuxfQN",
+        }} />
+
+        {/* MARKETPLACE */}
+        <Section props={{
+          reverse: false,
+          section: "MARKETPLACE",
+          headline: "Turn trash into treasure.",
+          body: "Get rid of old cards, trade with your friends, and sell to the community. Just like IRL. Long term, we want to build a marketplace for trading, selling, and buying Nexus cards.",
+          image: "nexus_engine.jpg",
+          alt: "Nexus goblin engineer",
+          showCta: false,
+          cta: "",
+          link: "",
+        }} />
+
+      </Container>
+
+      <FullWidthImage url="nexus_fade.jpg" alt="Nexus wormhole" />
 
       <Container>
 
         {/* STORY */}
         <Section props={{
           reverse: true,
-          section: "A UNIVERSE OF POSSIBILITIES",
-          headline: "Fight across the universe.",
-          body: "Nexus is the simulated universe in which the game is set. Filled with unique worlds to explore, inhabited by entities ready to aid you in battle. From fantasy staples, to science fiction marvels.",
+          section: "STORY",
+          headline: "Battle across the universe.",
+          body: "Nexus is a simulated universe filled with unique worlds to explore, inhabited by all kinds of entities. From fantasy staples like Elves and Vampires, to sci-fi beings like Cyborgs and Technomancers. Recruit them to join you in battle.",
           image: "nexus_hydra.jpg",
+          alt: "Nexus cybernetic hydra",
+          showCta: false,
+          cta: "",
+          link: "",
         }} />
-
+        
         {/* GAMEPLAY */}
         <Section props={{
           reverse: false,
           section: "GAMEPLAY",
-          headline: "Headline goes here",
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-          image: "void_woods.jpg",
+          headline: "Competitive core, casual.",
+          body: "The core game mode of Nexus will be 1vs1 competitive. That said, try out your cards and experience chaotic matches in the casual game mode. Join the Discord to help shape the gameplay.",
+          image: "nexus_merc.jpg",
+          alt: "Nexus magma cyborg paladin",
+          showCta: true,
+          cta: "Join the Nexus Discord",
+          link: "https://discord.gg/wVtZJuxfQN",
         }} />
 
       </Container>
 
-      <FullWidthImage url="void_woods.jpg" alt="Void Woods" />
+      <FullWidthImage url="nexus_jetpack.jpg" alt="nexus Woods" />
 
       <Container>
-
-        {/* MARKETPLACE */}
-        <Section props={{
-          reverse: true,
-          section: "A UNIVERSE OF POSSIBILITIES",
-          headline: "Fight across the universe.",
-          body: "Nexus is the simulated universe in which the game is set. Filled with unique worlds to explore, inhabited by entities ready to aid you in battle. From fantasy staples, to science fiction marvels.",
-          image: "void_woods.jpg",
-        }} />
 
         {/* ROADMAP */}
         <Section props={{
-          reverse: false,
+          reverse: true,
           section: "ROADMAP",
-          headline: "Headline goes here",
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-          image: "void_woods.jpg",
+          headline: "The start of an epic journey.",
+          body: "Making a game takes a long time. Here is the high-level roadmap for Nexus: 1. Create the card creator (in progress). 2. Create the community. 3. Create the game. 4. Create the marketplace.",
+          image: "nexus_tree.jpg",
+          alt: "Nexus cherry-blossom tree",
+          showCta: false,
+          cta: "",
+          link: "",
+        }} />
+
+        {/* PLAYTEST */}
+        <Section props={{
+          reverse: false,
+          section: "PLAYTEST",
+          headline: "Your feedback is wanted.",
+          body: "Interesting in trying Nexus? We want to hear what you think! Starting in early 2024, we'll be hosting IRL playtests in Stockholm, Sweden. Join the Discord for event announcements.",
+          image: "nexus_friends.jpg",
+          alt: "Nexus vervai friends",
+          showCta: true,
+          cta: "Join the Nexus Discord",
+          link: "https://discord.gg/wVtZJuxfQN",
         }} />
 
       </Container>
 
-      <FullWidthImage url="void_woods.jpg" alt="Void Woods" />
+      <FullWidthImage url="nexus_wolf.jpg" alt="nexus Woods" />
 
       <Container>
 
-        {/* PLAYTEST*/}
+        {/* ABOUT*/}
         <Section props={{
           reverse: false,
-          section: "LOREM IPSUM",
-          headline: "Headline goes here",
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-          image: "void_woods.jpg",
+          section: "ABOUT",
+          headline: "Hello, I'm Nils.",
+          body: "Nexus is my brainchild and passion project. I've played trading card games since the 90s. I've made hundreds of custom MTG and Hearthstone cards. But I've never played them. With Nexus I want everyone to be able play cards they create.",
+          image: "nexus_nils.jpg",
+          alt: "Nexus Nils",
+          showCta: false,
+          cta: "",
+          link: "",
         }} />
 
-        {/* ABOUT */}
+        {/* CONTACT */}
         <Section props={{
           reverse: true,
-          section: "ABOUT",
-          headline: "Headline goes here",
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-          image: "void_woods.jpg",
+          section: "CONTACT",
+          headline: "Write me a line..",
+          body: "Got a question? Want to get involved? Just want to say hi? Join the Discord and send me a DM.",
+          image: "nexus_letter.jpg",
+          alt: "Nexus vampire blood-letterer",
+          showCta: true,
+          cta: "Join the Nexus Discord",
+          link: "https://discord.gg/wVtZJuxfQN",
         }} />
-
-        {/* CTA */}
-        <Box className="flex flex-col justify-center items-center my-12 text-white bg-lime-800" sx={{ width: "100%", height: "400px" }}>
-          CTA GOES HERE
-          <DiscordButton />
-        </Box>
-
 
       </Container>
 
