@@ -13,7 +13,7 @@ export default function DiscordButton() {
                 className="rounded-full hover:shadow-md hover:shadow-black"
                 sx={{ height: 48, width: "auto" }}
             >
-                Nexus Discord
+                Join the Nexus Discord
             </Button>
         </Link>
     );
