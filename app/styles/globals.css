@@ -46,19 +46,11 @@ body {
 
 .gradient-animation {
   color: transparent;
-  background: linear-gradient(45deg, #f06, #a2f, #6ff, #fa2, #f6f);
+  /* background: linear-gradient(45deg, #f06, #a2f, #6ff, #fa2, #f6f); */
+  background: linear-gradient(45deg, #a3e635, #2dd4bf, #86efac, #d8b4fe, #bef264);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
   animation: gradient-animation 3s linear infinite;
-  
   position: relative;
-}
-
-.gradient-animation-button {
-  background: linear-gradient(45deg, #f06, #a2f, #6ff, #fa2, #f6f);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: gradient-animation 3s linear infinite;
 }

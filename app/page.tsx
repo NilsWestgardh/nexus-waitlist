@@ -14,66 +14,70 @@ export default function Home() {
       {/* HERO */}
       <Hero />
 
-      
-
       {/* MAIN CONTENT */}
       <Container>
 
         {/* USP */}
         <Section props={{
           reverse: false,
-          section: "USP",
-          headline: "Headline goes here",
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          section: "AI-POWERED CARD CREATION",
+          headline: "Imagine it. Create it. Play it.",
+          body: "Both by the Nexus team and by the community create cards. The AI-powered card creator tool makes it easy go from idea to awesome custom card. The community submits and votes on cards, and the top voted cards are added to the game.",
           image: "nexus_cards.png",
         }} />
-
-        {/* VISION */}
-        <Section props={{
-          reverse: true,
-          section: "VISION",
-          headline: "Headline goes here",
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-          image: "void_woods.jpg",
-        }} />
-
-        {/* STORY */}
+        
+        {/* COMMUNITY */}
         <Section props={{
           reverse: false,
-          section: "STORY",
-          headline: "Headline goes here",
+          section: "COMMUNITY-DRIVEN DEVELOPMENT",
+          headline: "Get involved. Get heard.",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-          image: "void_woods.jpg",
+          image: "nexus_friends.jpg",
         }} />
 
       </Container>
 
-      <FullWidthImage url="void_woods.jpg" alt="Void Woods" />
+      <FullWidthImage url="nexus_flower.jpg" alt="Void Woods" />
 
       <Container>
 
-        {/* GAMEPLAY */}
+        {/* STORY */}
         <Section props={{
           reverse: true,
+          section: "A UNIVERSE OF POSSIBILITIES",
+          headline: "Fight across the universe.",
+          body: "Nexus is the simulated universe in which the game is set. Filled with unique worlds to explore, inhabited by entities ready to aid you in battle. From fantasy staples, to science fiction marvels.",
+          image: "nexus_hydra.jpg",
+        }} />
+
+        {/* GAMEPLAY */}
+        <Section props={{
+          reverse: false,
           section: "GAMEPLAY",
           headline: "Headline goes here",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
           image: "void_woods.jpg",
         }} />
 
-        {/* COMMUNITY */}
+      </Container>
+
+      <FullWidthImage url="void_woods.jpg" alt="Void Woods" />
+
+      <Container>
+
+        {/* MARKETPLACE */}
         <Section props={{
-          reverse: false,
-          section: "COMMUNITY",
-          headline: "Headline goes here",
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          reverse: true,
+          section: "A UNIVERSE OF POSSIBILITIES",
+          headline: "Fight across the universe.",
+          body: "Nexus is the simulated universe in which the game is set. Filled with unique worlds to explore, inhabited by entities ready to aid you in battle. From fantasy staples, to science fiction marvels.",
           image: "void_woods.jpg",
         }} />
 
-        {/* PLAYTEST */}
-      <Section props={{
-          reverse: true,
-          section: "PLAYTEST",
+        {/* ROADMAP */}
+        <Section props={{
+          reverse: false,
+          section: "ROADMAP",
           headline: "Headline goes here",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
           image: "void_woods.jpg",
@@ -85,10 +89,10 @@ export default function Home() {
 
       <Container>
 
-        {/* ROADMAP */}
+        {/* PLAYTEST*/}
         <Section props={{
           reverse: false,
-          section: "ROADMAP",
+          section: "LOREM IPSUM",
           headline: "Headline goes here",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
           image: "void_woods.jpg",

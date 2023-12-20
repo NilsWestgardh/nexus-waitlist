@@ -51,11 +51,11 @@ export default function Hero() {
         alt="Nexus hero image"
         fill={true}
         priority
-        className="animate-fade-in-half initial-hidden"
+        className="initial-hidden"
         style={{
             zIndex: -1,
             objectFit: 'cover',
-            opacity: 0.33,
+            opacity: 0.25,
         }}
         />)}
 
@@ -71,15 +71,22 @@ export default function Hero() {
         <>
           <NexusLogo />
           <Box className="flex flex-col justify-center items-center space-y-0 mb-6">
-            <Typography variant="h1" className="gradient-animation">Ai-powered.</Typography>
-            <Typography variant="h1" className="gradient-animation">Open source.</Typography>
-            <Typography variant="h1" className="gradient-animation">Competitive TCG.</Typography>
+            <Typography variant="h1" className="gradient-animation">AI-POWERED.</Typography>
+            <Typography variant="h1" className="gradient-animation">OPEN SOURCE.</Typography>
+            <Typography variant="h1" className="gradient-animation">COMPETITIVE TCG.</Typography>
           </Box>
           <Typography
             variant="h5"
             className="text-white"
           >
-            Create custom cards with the help of AI.<br />Create the game with community.
+            Create playable custom cards with AI.<br />Create the game with the community.
+          </Typography>
+          <Typography
+            variant="subtitle2"
+            color="primary"
+            className=""
+          >
+            Join Discord to get updates and get involved.
           </Typography>
           <DiscordButton />
         </>

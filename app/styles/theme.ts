@@ -6,18 +6,18 @@ const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#818cf8',
+      main: '#a3e635',
     },
     secondary: {
-      main: '#f472b6',
+      main: '#059669',
     },
     background: {
       default: '#020617',
       paper: '#020617',
     },
     text: {
-      primary: '#f9fafb',
-      secondary: '#e5e7eb',
+      primary: '#a3e635',
+      secondary: '#059669',
       disabled: '#9ca3af',
     },
     error: {
@@ -37,7 +37,7 @@ const theme = createTheme({
   typography: {
     fontWeightLight: 300,
     h1: {
-      fontSize: '6rem',
+      fontSize: '5rem',
       fontWeight: 400,
     },
     h2: {
@@ -54,11 +54,11 @@ const theme = createTheme({
     },
     subtitle1: {
       fontSize: '1.25rem',
-      fontWeight: 300,
+      fontWeight: 400,
     },
     subtitle2: {
-      fontSize: '1.25rem',
-      fontWeight: 300,
+      fontSize: '1rem',
+      fontWeight: 400,
     },
     body1: {
       fontSize: '1.25rem',
