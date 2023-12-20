@@ -27,6 +27,10 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+.initial-hidden {
+  opacity: 0;
+}
+
 /* LOADING BAR ANIMATION */
 
 .font-mono {
