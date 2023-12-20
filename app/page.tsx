@@ -1,67 +1,91 @@
+"use client";
+
+import React, { useState, useEffect } from 'react';
 import { Container, Box, Typography, Button, SvgIcon } from "@mui/material";
-import Image from 'next/image';
-import DiscordButton from "./components/DiscordButton";
+import Section from "./components/Section";
+import Hero from './components/Hero';
 
 export default function Home() {
-  return (
-    <Box>
-      {/* HERO */}
-      <Box
-        sx={{
-            position: 'relative',
-            width: '100%',
-            height: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            textAlign: 'center',
-        }}
-    >
-        <Image
-            src="/images/nexus-hero-2.png"
-            alt="Nexus hero image"
-            fill={true}
-            style={{
-              zIndex: -1,
-              objectFit: 'cover',
-            }}
-        />
-        <Typography variant="subtitle1" color="primary.contrastText" sx={{ mb: 3 }}>
-            ...initializing nexus_v1.0.0
-        </Typography>
-        <Typography variant="h1" component="h1" color="primary.contrastText">
-            Enter Nexus
-        </Typography>
-        <Typography variant="h5" color="primary.contrastText" sx={{ my: 3 }}>
-            Join our waitlist and stay updated
-        </Typography>
-        <DiscordButton />
-    </Box>
 
-        {/* MAIN CONTENT */}
+  return (
+    <Box className="flex flex-col space-y-12 md:space-y-24 px-6 md:px-0 ">
+      {/* HERO */}
+      <Hero />
+
+      {/* MAIN CONTENT */}
       <Container>
         {/* USP */}
-        <Box>
-          
-              <Box className="flex flex-col justify-center p-12 my-24 mx-12 space-y-6 rounded-xl bg-gray-800 border border-gray-700 shadow-2xl shadow-black">
-              
-              <Typography variant="h3" component="h3" color="primary.contrastText">USP</Typography>
-              <Typography variant="subtitle1" color="primary.contrastText">USP</Typography>
-            </Box>
-        </Box>
-            
-        {/* VISION */}
+        <Section props={{
+          reverse: false,
+          section: "USP",
+          headline: "Headline goes here",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          image: "void_woods.jpg",
+        }} />
 
-        {/* ROADMAP */}
+        {/* VISION */}
+        <Section props={{
+          reverse: true,
+          section: "VISION",
+          headline: "Headline goes here",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          image: "void_woods.jpg",
+        }} />
+
+        <Section props={{
+          reverse: false,
+          section: "STORY",
+          headline: "Headline goes here",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          image: "void_woods.jpg",
+        }} />
+
+        <Section props={{
+          reverse: true,
+          section: "GAMEPLAY",
+          headline: "Headline goes here",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          image: "void_woods.jpg",
+        }} />
+
+        {/* COMMUNITY */}
+        <Section props={{
+          reverse: false,
+          section: "COMMUNITY",
+          headline: "Headline goes here",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          image: "void_woods.jpg",
+        }} />
 
         {/* PLAYTEST */}
+        <Section props={{
+          reverse: true,
+          section: "PLAYTEST",
+          headline: "Headline goes here",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          image: "void_woods.jpg",
+        }} />
+
+        {/* ROADMAP */}
+        <Section props={{
+          reverse: false,
+          section: "ROADMAP",
+          headline: "Headline goes here",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          image: "void_woods.jpg",
+        }} />
 
         {/* ABOUT */}
+        <Section props={{
+          reverse: true,
+          section: "ABOUT",
+          headline: "Headline goes here",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+          image: "void_woods.jpg",
+        }} />
 
         {/* CTA */}
       </Container>
     </Box>
-    
   )
 }
