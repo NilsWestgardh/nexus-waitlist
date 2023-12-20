@@ -76,7 +76,7 @@ export default function Hero() {
           </Box>
           <Typography
             variant="h5"
-            className="text-white gradient-animation"
+            className="text-white"
           >
             Create custom cards with the help of AI.<br />Create the game with community.
           </Typography>
