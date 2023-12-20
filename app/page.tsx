@@ -66,7 +66,7 @@ export default function Home() {
         <Section props={{
           reverse: false,
           section: "MARKETPLACE",
-          headline: "Turn trash into treasure.",
+          headline: "Your trash, my treasure.",
           body: "Get rid of old cards, trade with your friends, and sell to the community. Just like IRL. Long term, we want to build a marketplace for trading, selling, and buying Nexus cards.",
           image: "nexus_engine.jpg",
           alt: "Nexus goblin engineer",
