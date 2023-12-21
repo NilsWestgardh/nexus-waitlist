@@ -7,10 +7,26 @@ body {
   color: #ffffff;
 }
 
+/* RESPONSIVENESS */
+
 .aspect-ratio-box::before {
   content: '';
   display: block;
   padding-top: 100%;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .small-screen-h1 {
+    font-size: 2rem; /* adjust as needed */
+  }
+}
+
+/* Medium screens */
+@media (min-width: 601px) and (max-width: 960px) {
+  .medium-screen-h1 {
+    font-size: 2.5rem; /* adjust as needed */
+  }
 }
 
 /* ANIMATION: KEYFRAMES */

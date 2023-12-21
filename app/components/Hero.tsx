@@ -2,15 +2,21 @@
 
 import { useState, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Image from "next/image";
 import DiscordButton from "./DiscordButton";
 import LoadingBar from "./LoadingBar";
 import NexusLogo from "./NexusLogo";
 import clsx from "clsx";
 
+
+
 export default function Hero() {
   const [loadingBarState, setLoadingBarState] = useState('fade-in'); // 'fade-in', 'fade-out', or ''
   const [fadeInContent, setFadeInContent] = useState(false);
+
+  const smallScreen = useMediaQuery(theme => theme.breakpoints.down('sm'));
+const mediumScreen = useMediaQuery(theme => theme.breakpoints.between('sm', 'md'));
 
   useEffect(() => {
     // Start by fading in the loading bar
@@ -71,9 +77,33 @@ export default function Hero() {
         <>
           <NexusLogo />
           <Box className="flex flex-col justify-center items-center space-y-0 mb-6">
-            <Typography variant="h1" className="gradient-animation">AI-POWERED.</Typography>
-            <Typography variant="h1" className="gradient-animation">COMMUNITY-DRIVEN.</Typography>
-            <Typography variant="h1" className="gradient-animation">COMPETITIVE TCG.</Typography>
+            <Typography
+              variant="h1"
+              className={clsx('gradient-animation', {
+                'small-screen-h1': smallScreen,
+                'medium-screen-h1': mediumScreen,
+              })}
+            >
+              AI-POWERED.
+            </Typography>
+            <Typography
+              variant="h1"
+              className={clsx('gradient-animation', {
+                'small-screen-h1': smallScreen,
+                'medium-screen-h1': mediumScreen,
+              })}
+            >
+              OPEN SOURCE.
+            </Typography>
+            <Typography
+              variant="h1"
+              className={clsx('gradient-animation', {
+                'small-screen-h1': smallScreen,
+                'medium-screen-h1': mediumScreen,
+              })}
+            >
+              COMPETITIVE TCG.
+            </Typography>
           </Box>
           <Typography
             variant="h5"
