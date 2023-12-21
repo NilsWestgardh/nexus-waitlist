@@ -120,7 +120,6 @@ export default function Hero({ props }: HeroProps) {
             className="text-white"
           >
             {props.subheader[0]}<br />{props.subheader[1]}
-            Create playable custom cards with AI.<br />Create the game with the community.
           </Typography>
           <Typography
             variant="subtitle2"
