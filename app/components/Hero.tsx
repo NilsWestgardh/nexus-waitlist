@@ -94,8 +94,7 @@ export default function Hero({ props }: HeroProps) {
                 'medium-screen-h1': mediumScreen,
               })}
             >
-              {props.h1[0]}
-              {/* AI-POWERED. */}
+              {props.h1[0].toUpperCase()}
             </Typography>
             <Typography
               variant="h1"
@@ -104,8 +103,7 @@ export default function Hero({ props }: HeroProps) {
                 'medium-screen-h1': mediumScreen,
               })}
             >
-              {props.h1[1]}
-              {/* OPEN SOURCE. */}
+              {props.h1[1].toUpperCase()}
             </Typography>
             <Typography
               variant="h1"
@@ -114,8 +112,7 @@ export default function Hero({ props }: HeroProps) {
                 'medium-screen-h1': mediumScreen,
               })}
             >
-              {props.h1[2]}
-              {/* COMPETITIVE TCG. */}
+              {props.h1[2].toUpperCase()}
             </Typography>
           </Box>
           <Typography

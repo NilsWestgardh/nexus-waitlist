@@ -20,7 +20,7 @@ export default function Home() {
     >
       {/* HERO */}
       <Hero props={{
-        h1: [],
+        h1: ["AI-POWERED", "COMMUNITY-DRIVEN.", "TRADING CARD GAME."],
         subheader: ["", ""]
       }} />
 
