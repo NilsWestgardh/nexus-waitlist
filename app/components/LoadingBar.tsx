@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
 
 type LoadingBarProps = {
-    section: string;
     progressMessage: string;
     completeMessage: string;
 };
 
-export default function LoadingBar({ section, progressMessage, completeMessage }: LoadingBarProps) {
+export default function LoadingBar({ progressMessage, completeMessage }: LoadingBarProps) {
     const [progress, setProgress] = useState(0);
     const [hideBar, setHideBar] = useState(false);
     const totalCharacters = 20;
@@ -38,7 +37,7 @@ export default function LoadingBar({ section, progressMessage, completeMessage }
             {!hideBar ? (
                 <>
                     <div className="flex items-center justify-center w-full">
-                        <span className="text-lime-500">{progressMessage} {section} [</span>
+                        <span className="text-lime-500">{progressMessage} [</span>
                         <span className="text-lime-500">{loadedBar}</span>
                         <span className="text-lime-900">{unloadedBar}</span>
                         <span className="text-lime-500">] {progress}%</span>

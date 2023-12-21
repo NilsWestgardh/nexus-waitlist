@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Chip, Typography } from "@mui/material";
 import Image from 'next/image';
 import clsx from "clsx";
 import Link from "next/link";
@@ -11,6 +11,7 @@ type SectionProps = {
         body: string;
         image: string;
         alt: string;
+        caption: string;
         showCta: boolean;
         cta: string;
         link: string;
@@ -55,6 +56,7 @@ export default function Section({ props }: SectionProps) {
               >
                 
               </Typography>
+
               {showCta && (<Link href={props.link} passHref target="_blank">
                 <Button
                   variant="outlined"
@@ -78,6 +80,9 @@ export default function Section({ props }: SectionProps) {
                       objectFit: 'cover',
                     }}
                   />
+                  <Typography variant="overline" className="text-md">
+                      {props.caption}
+                  </Typography>
                 </Box>
               </Box>
             </Box>

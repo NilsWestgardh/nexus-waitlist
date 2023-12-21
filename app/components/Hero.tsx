@@ -9,10 +9,16 @@ import LoadingBar from "./LoadingBar";
 import NexusLogo from "./NexusLogo";
 import clsx from "clsx";
 
+type HeroProps = {
+  props: {
+    h1: string[];
+    subheader: string[];
+  };
+};
 
-
-export default function Hero() {
-  const [loadingBarState, setLoadingBarState] = useState('fade-in'); // 'fade-in', 'fade-out', or ''
+export default function Hero({ props }: HeroProps) {
+  const [loadingBarState, setLoadingBarState] = useState('fade-in');
+  const [fadeInBgImage, setFadeInBgImage] = useState(false);
   const [fadeInContent, setFadeInContent] = useState(false);
 
   const smallScreen = useMediaQuery((theme: any) => theme.breakpoints.down('sm'));
@@ -23,17 +29,23 @@ export default function Hero() {
     let timer1 = setTimeout(() => {
       // After 5 seconds, fade out the loading bar
       setLoadingBarState('fade-out');
-    }, 5000);
+    }, 3000);
 
     let timer2 = setTimeout(() => {
-      // After 6 seconds, remove the loading bar and fade in the rest of the content
+      // After 4 seconds, remove the loading bar and fade in the bg image
       setLoadingBarState('');
+      setFadeInBgImage(true);
+    }, 4000);
+
+    let timer3 = setTimeout(() => {
+      // After 5.5 seconds, fade in the rest of the content
       setFadeInContent(true);
-    }, 6000);
+    }, 5500);
 
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
+      clearTimeout(timer3);
     };
   }, []);
 
@@ -51,8 +63,7 @@ export default function Hero() {
         textAlign: 'center',
       }}
     >
-      {/* The background image is always rendered without any condition */}
-      {fadeInContent && (<Image
+      {fadeInBgImage && (<Image
         src="/images/nexus-hero-4.png"
         alt="Nexus hero image"
         fill={true}
@@ -65,14 +76,13 @@ export default function Hero() {
         }}
         />)}
 
-      {/* Loading bar is controlled for fading in and out */}
       {loadingBarState && (
         <Box className={`flex flex-col justify-center items-center ${loadingBarState}`}>
-          <LoadingBar section="" progressMessage="INITIALIZING SIMULATION" completeMessage="LOADING UNIVERSE..." />
+          <LoadingBar
+            progressMessage="INITIALIZING SIMULATION" completeMessage="LOADING UNIVERSE..." />
         </Box>
       )}
 
-      {/* Rest of the content fades in after the loading bar fades out */}
       {fadeInContent && (
         <>
           <NexusLogo />
@@ -84,7 +94,8 @@ export default function Hero() {
                 'medium-screen-h1': mediumScreen,
               })}
             >
-              AI-POWERED.
+              {props.h1[0]}
+              {/* AI-POWERED. */}
             </Typography>
             <Typography
               variant="h1"
@@ -93,7 +104,8 @@ export default function Hero() {
                 'medium-screen-h1': mediumScreen,
               })}
             >
-              OPEN SOURCE.
+              {props.h1[1]}
+              {/* OPEN SOURCE. */}
             </Typography>
             <Typography
               variant="h1"
@@ -102,13 +114,15 @@ export default function Hero() {
                 'medium-screen-h1': mediumScreen,
               })}
             >
-              COMPETITIVE TCG.
+              {props.h1[2]}
+              {/* COMPETITIVE TCG. */}
             </Typography>
           </Box>
           <Typography
             variant="h5"
             className="text-white"
           >
+            {props.subheader[0]}<br />{props.subheader[1]}
             Create playable custom cards with AI.<br />Create the game with the community.
           </Typography>
           <Typography

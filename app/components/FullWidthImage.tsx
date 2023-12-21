@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import Image from 'next/image';
-import clsx from "clsx";
 
 type FullWidthImageProps = {
     url: string;
