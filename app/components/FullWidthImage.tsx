@@ -9,7 +9,7 @@ type FullWidthImageProps = {
 
 export default function FullWidthImage(props: FullWidthImageProps) {
     return (
-        <Box className="w-full py-24 overflow-hidden" sx={{ position: "relative", height: 400 }}>
+        <Box className="w-full py-24 overflow-hidden hidden md:block" sx={{ position: "relative", height: 400 }}>
             <Image
                 src={`/images/${props.url}`}
                 fill={true}

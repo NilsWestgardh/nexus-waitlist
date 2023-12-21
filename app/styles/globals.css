@@ -7,6 +7,12 @@ body {
   color: #ffffff;
 }
 
+.aspect-ratio-box::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
 /* ANIMATION: KEYFRAMES */
 
 @keyframes fadeIn {

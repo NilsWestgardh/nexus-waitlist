@@ -5,12 +5,11 @@ import { Container, Box } from "@mui/material";
 import Section from "./components/Section";
 import Hero from './components/Hero';
 import FullWidthImage from './components/FullWidthImage';
-import DiscordButton from './components/DiscordButton';
 
 export default function Home() {
 
   return (
-    <Box className="flex flex-col space-y-12 md:space-y-24">
+    <Box className="flex flex-col w-full space-y-6 md:space-y-12">
       {/* HERO */}
       <Hero />
 
@@ -23,7 +22,7 @@ export default function Home() {
           section: "CARDS",
           headline: "Imagine it, then play it.",
           body: "Nexus's AI-powered Card Creator tool makes it easy go from idea to your own custom card. Beat your friends with it in a casual match right away, or submit it for review to be included in the official game.",
-          image: "nexus_encounter.jpg",
+          image: "nexus_cards.png",
           alt: "",
           showCta: false,
           cta: "",

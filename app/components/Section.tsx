@@ -21,23 +21,24 @@ export default function Section({ props }: SectionProps) {
     const showCta = props.showCta && props.cta && props.link;
 
     return (
-        <Box className="flex flex-col w-full my-24">
+        <Box className="flex flex-col justify-center md:justify-start w-full my-12 md:my-24 mx-6 md:mx-0">
+          {/* TEXT CONTENT */}
           <Box className={clsx(
-            "w-full justify-center items-center md:items-start md:justify-between gap-12 mx-6 md:mx-0",
+            "w-full justify-center items-center md:items-start md:justify-between gap-12  border border-sky-300",
             `${props.reverse ? "flex flex-col md:flex-row-reverse" : " flex flex-col md:flex-row"}`
         )}>
-            <Box className="flex flex-col w-full space-y-0 md:space-y-6">
+            <Box className="flex flex-col w-full border border-lime-300">
             <Typography
                 variant="overline"
                 color="secondary"
-                className="w-full"
+                className="w-full mb-2"
               >
                 {props.section}
               </Typography>
               <Typography
                 variant="h2"
                 color="primary"
-                className="w-full"
+                className="w-full mb-4"
               >
                 {props.headline}
               </Typography>
@@ -59,22 +60,28 @@ export default function Section({ props }: SectionProps) {
                   variant="outlined"
                   color="primary"
                   size="large"
-                  className="rounded-full hover:shadow-md hover:shadow-lime-800"
+                  className="mt-4 rounded-full hover:shadow-md hover:shadow-lime-800"
                 >
                   {props.cta}
                 </Button>
               </Link>)}
             </Box>
-            <Image
-              src={`/images/` + props.image}
-              alt={props.alt}
-              width={500}
-              height={500}
-              style={{
-                objectFit: "cover",
-                borderRadius: "2.5%",
-              }}
-            />
+            {/* IMAGE */}
+            <Box className="w-full overflow-hidden rounded-lg" sx={{ position: 'relative' }}>
+              <Box className="aspect-ratio-box" sx={{ width: '100%', height: 0, paddingBottom: '100%', position: 'relative' }}>
+                <Box sx={{ position: 'absolute', top: 0, left: 0, bottom: 0, right: 0 }}>
+                  <Image
+                    src={`/images/` + props.image}
+                    alt={props.alt}
+                    fill={true}
+                    style={{
+                      objectFit: 'cover',
+                    }}
+                  />
+                </Box>
+              </Box>
+            </Box>
+            
           </Box>
         </Box>
     )

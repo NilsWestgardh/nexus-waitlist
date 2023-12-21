@@ -34,13 +34,16 @@ export default function LoadingBar({ section, progressMessage, completeMessage }
     const unloadedBar = '░'.repeat(unloadedCharacters);
 
     return (
-        <div className="flex items-center w-full h-6 font-mono text-sm">
+        <div className="flex flex-col md:flex-row items-center w-full h-6 font-mono text-sm">
             {!hideBar ? (
                 <>
-                    <span className="text-lime-500">{progressMessage} {section} [</span>
-                    <span className="text-lime-500">{loadedBar}</span>
-                    <span className="text-lime-900">{unloadedBar}</span>
-                    <span className="text-lime-500">] {progress}%</span>
+                    <div className="flex items-center justify-center w-full">
+                        <span className="text-lime-500">{progressMessage} {section} [</span>
+                        <span className="text-lime-500">{loadedBar}</span>
+                        <span className="text-lime-900">{unloadedBar}</span>
+                        <span className="text-lime-500">] {progress}%</span>
+                    </div>
+                    
                 </>
             ) : (
                 <span className="text-lime-500">{completeMessage}</span>
