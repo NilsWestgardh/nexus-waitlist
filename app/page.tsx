@@ -20,7 +20,7 @@ export default function Home() {
     >
       {/* HERO */}
       <Hero props={{
-        h1: ["AI-POWERED", "OPEN SOURCE.", "TRADING CARD GAME."],
+        h1: ["AI-POWERED", "OPEN SOURCE.", "DIGITAL TCG."],
         subheader: ["Create playable custom cards with AI.", "Then, create the game with the community."]
       }} />
 
