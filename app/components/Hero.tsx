@@ -15,8 +15,8 @@ export default function Hero() {
   const [loadingBarState, setLoadingBarState] = useState('fade-in'); // 'fade-in', 'fade-out', or ''
   const [fadeInContent, setFadeInContent] = useState(false);
 
-  const smallScreen = useMediaQuery(theme => theme.breakpoints.down('sm'));
-const mediumScreen = useMediaQuery(theme => theme.breakpoints.between('sm', 'md'));
+  const smallScreen = useMediaQuery((theme: any) => theme.breakpoints.down('sm'));
+  const mediumScreen = useMediaQuery((theme: any) => theme.breakpoints.between('sm', 'md'));
 
   useEffect(() => {
     // Start by fading in the loading bar
