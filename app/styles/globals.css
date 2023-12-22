@@ -18,14 +18,14 @@ body {
 /* Small screens */
 @media (max-width: 600px) {
   .small-screen-h1 {
-    font-size: 2rem; /* adjust as needed */
+    font-size: 3rem; /* adjust as needed */
   }
 }
 
 /* Medium screens */
 @media (min-width: 601px) and (max-width: 960px) {
   .medium-screen-h1 {
-    font-size: 2.5rem; /* adjust as needed */
+    font-size: 3.5rem; /* adjust as needed */
   }
 }
 

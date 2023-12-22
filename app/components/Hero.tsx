@@ -113,7 +113,7 @@ export default function Hero({ props }: HeroProps) {
             </Typography>
           </Box>
           <Typography
-            variant="h5"
+            variant="h4"
             className="text-white"
           >
             {props.subheader[0]}<br />{props.subheader[1]}
@@ -123,7 +123,7 @@ export default function Hero({ props }: HeroProps) {
             color="primary"
             className=""
           >
-            Join Discord to get updates and get involved.
+            Join Discord to get updates and to get involved.
           </Typography>
           <DiscordButton />
         </>
