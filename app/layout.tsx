@@ -10,6 +10,7 @@ const robotoMono = Roboto_Mono({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Nexus: AI-powered TCG',
   description: 'Nexus is a competitive digital strategic trading card game where players can make and play their own cards, which they create with the help of AI.',
+  metadataBase: new URL('https://play.nexus'),
 }
 
 type RootLayoutProps = {

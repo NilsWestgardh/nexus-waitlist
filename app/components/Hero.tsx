@@ -51,15 +51,12 @@ export default function Hero({ props }: HeroProps) {
 
   return (
     <Box
-      className="flex flex-col justify-center items-center w-full h-screen space-y-6"
+      className="flex flex-col justify-center items-center space-y-6"
       sx={{
         position: 'relative',
         width: '100%',
-        height: '100vh',
+        height: '80vh',
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
         textAlign: 'center',
       }}
     >

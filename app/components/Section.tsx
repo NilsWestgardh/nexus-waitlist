@@ -22,7 +22,7 @@ export default function Section({ props }: SectionProps) {
     const showCta = props.showCta && props.cta && props.link;
 
     return (
-        <Box className="flex flex-col justify-center md:justify-start w-full my-12 md:my-24 px-6 md:px-0">
+        <Box className="flex flex-col justify-center md:justify-start w-full my-6 md:my-12 px-6 md:px-0">
           {/* TEXT CONTENT */}
           <Box className={clsx(
             "w-full justify-center items-center md:items-start md:justify-between gap-12",
