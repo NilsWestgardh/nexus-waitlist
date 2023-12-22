@@ -3,6 +3,7 @@ import theme from './styles/theme';
 import type { Metadata } from 'next'
 import { Inter, Roboto_Mono } from 'next/font/google'
 import './styles/globals.css'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 const robotoMono = Roboto_Mono({ subsets: ['latin'] })
@@ -25,6 +26,7 @@ export default function RootLayout(props: RootLayoutProps) {
       <body className="bg-background text-foreground bg-black">
           <ThemeProvider theme={theme}>
             {children}
+            <Analytics />
           </ThemeProvider>
         </body>
     </html>
