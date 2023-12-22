@@ -212,13 +212,13 @@ export default function Home() {
           "
         >
 
-          <Link href="" target="_blank">
+          <Link href="https://discord.gg/wVtZJuxfQN" target="_blank">
             <Typography variant="overline" className="text-sm">
               Discord
             </Typography>
           </Link>
 
-          <Link href="" target="_blank">
+          <Link href="https://twitter.com/PlayNexusTcg" target="_blank">
             <Typography variant="overline" className="text-sm">
               X (Twitter)
             </Typography>
